@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Lecture-07: Form and Input in HTML</h1>
+    <article>
+        <h2>Contant Me</h2>
+        <p>I'd really like to hear from you!</p>
+
+        <form action="https://www.google.com" method="get">
+            <fieldset>
+                <p>
+                    <label for="firstname">First Name:</label>
+                    <input type="text" name="firstname" id="firstname" placeholder="First Name" autocomplete="on"
+                        required autofocus>
+                </p>
+                <p>
+                    <label for="lasttname">Last Name:</label>
+                    <input type="text" name="lastname" id="lastname" placeholder="First Name" autocomplete="on" required
+                        autofocus>
+                </p>
+                <p>
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" placeholder="First Name" required autofocus>
+                </p>
+                <p>
+                    <label for="phone">Password:</label>
+                    <input type="tel" name="phone" id="phone" placeholder="+92000-0000000" pattern="[0-9]{3}-[0-9]{7}"
+                        required autofocus>
+                </p>
+                <p>
+                    <label for="decade">Decade:</label>
+                    <input type="number" name="decade" id="decade" min="1950" max="2020" step="10" value="1980" required
+                        autofocus>
+                </p>
+                <p>
+                    <label for="coffee">Coffee:</label>
+                    <select name="coffee" id="coffee">
+                        <optgroup label="'coffee">
+                            <option value="rcoffee">Regular Coffee</option>
+                            <option value="lcoffee">large Coffee</option>
+                            <option value="scoffee">Small Coffee</option>
+                        </optgroup>
+                        <optgroup label="'Special coffee">
+                            <option value="rcoffee">Tri Coffee</option>
+                            <option value="lcoffee">Mari Coffee</option>
+                            <option value="scoffee">Subki Coffee</option>
+                        </optgroup>
+                    </select>
+                </p>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>
+                    <p>
+                        <input type="radio" name="food" id="toacs" value="tacos">
+                        <label for="other">Tacos</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="Pizza" value="Pizza">
+                        <label for="other">Pizza</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="fother" value="fother">
+                        <label for="other">Other</label>
+                    </p>
+                </legend>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Do you have pets?</legend>
+                <p>
+                    <input type="checkbox" name="pets" id="'dogs" value="dogs">
+                    <label for="dog">Dog</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="pets" id="'cat" value="cat">
+                    <label for="cat">CAT</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="pets" id="'fish" value="fish">
+                    <label for="fish">Fish</label>
+                </p>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Send me a Message</legend>
+                <label for="message">Message:</label>
+                <br>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="TYPE HERE"></textarea>
+            </fieldset>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </article>
+</body>
+
+</html>
